@@ -130,7 +130,7 @@ member.send("SUNUCUYA KATILAN KİŞİYE ATILACAK MEAJ")
 
 client.on("ready", () => {
   setInterval(() => {
-    let botdurum = client.channels.find(c => c.id === "KANAL ID");
+    let botdurum = client.channels.find(c => c.id === "1022869464582197318");
     let guild = botdurum.guild.id
     botdurum.send(new Discord.RichEmbed()
       .setColor("RED")
@@ -146,4 +146,4 @@ client.on("ready", () => {
 
 
 
-client.login(ayarlar.token);
+client.login(process.env.token);
