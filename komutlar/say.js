@@ -4,7 +4,7 @@ const a = require("../ayarlar.json")////Airfax Youtube Kanalından Alınmıştı
 module.exports.run = async (client, message, args) => {////Airfax Youtube Kanalından Alınmıştır Paylaşılması Yasaktır.
   const bergy = new Discord.RichEmbed()
 .setColor("GREEN")
-.setAuthor(`${message.guild.name}Yardım**`,message.guild.avatarURL)////Airfax Youtube Kanalından Alınmıştır Paylaşılması Yasaktır.
+.setAuthor(message.guild.name,message.guild.avatarURL)////Airfax Youtube Kanalından Alınmıştır Paylaşılması Yasaktır.
 .setThumbnail(message.guild.iconURL)  
 .setDescription(`
 ${client.emojis.get(a.emoji.sağok)} | **Sunucudaki \`Toplam Üye\` Sayısı:** \`${message.guild.memberCount}\`

@@ -1,14 +1,14 @@
 const Discord = require("discord.js");
 const a = require("../ayarlar.json")////Airfax Youtube Kanalından Alınmıştır Paylaşılması Yasaktır.
-
+const prefix = a.prefix
 module.exports.run = async (client, message, args) => {////Airfax Youtube Kanalından Alınmıştır Paylaşılması Yasaktır.
   const bergy = new Discord.RichEmbed()
 .setColor("GREEN")
-.setAuthor(message.guild.name, message.guild.avatarURL)////Airfax Youtube Kanalından Alınmıştır Paylaşılması Yasaktır.
+.setAuthor(`${message.guild.name} Yardım`,message.guild.avatarURL)////Airfax Youtube Kanalından Alınmıştır Paylaşılması Yasaktır.
 .setThumbnail(message.guild.iconURL)  
-.setDescription(`__**${message.guild.name} Yardım**__
+.setDescription(`__**Komutlar**__
 
-Komutlar`)
+**${prefix}bototorol :** \`Sunucuya giren bota seçtiğiniz rolü otomatik verir.\``)
   .setFooter(`Komutu Kullanan: ${message.author.tag}`, message.author.avatarURL)   ////Airfax Youtube Kanalından Alınmıştır Paylaşılması Yasaktır.
   message.channel.sendEmbed(bergy);
 };
