@@ -19,8 +19,7 @@ if(!args[0]) return message.channel.send(karaliste)
             if (message.guild.channels.find(a => a.id === ayarlar.ID.kodkatagoriID)) {
             message.guild.createChannel(kanal, {type: "text", parent: message.guild.channels.find(a => a.id === ayarlar.ID.kodkatagoriID)}).then(c => c.send(new Discord.RichEmbed()
 .setColor("RED")
-.setDescription(
-            `**${message.guild.name} SUNUCUSU KOD PAYLAŞIM KANALI! JavaScript KATEGORİSİ!**\n
+.setDescription(`**${message.guild.name} SUNUCUSU KOD PAYLAŞIM KANALI! JavaScript KATEGORİSİ!**\n
             **${message.author} Tarafından \`\`${kanal}\`\` İsimli Kod Eklendi! ${message.author} Teşekkür Ederiz! :heart:\n\n
             ${client.emojis.get("EMOJİ ID")} İşte Kod;**
 

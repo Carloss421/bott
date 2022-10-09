@@ -55,7 +55,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'hatalı-kanal',
+  name: 'hata-kanal',
   description: 'AirCod KOD PAYLASIM',
   usage: 'hatalı-kanal #kanal'
 };
