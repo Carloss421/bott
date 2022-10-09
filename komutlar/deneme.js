@@ -2,7 +2,6 @@ const Discord = require('discord.js');
 
 exports.run = async (client, message, args) => {
 
-  if(message.guild.roles.cache.id == 0) return;
 
   function e(content) {
     var sliceLength = content.split('\n').length;
