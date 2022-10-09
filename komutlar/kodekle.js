@@ -11,7 +11,7 @@ const karaliste = new Discord.RichEmbed()
 if(!args[0]) return message.channel.send(karaliste)  
 
         if(args[0] == 'js') {
-            let kanal = '📁'+args[1]
+            let kanal = '📁-'+args[1]
             let code = args.slice(2).join(' ');
             if (!kanal) return message.channel.send("Kanal İsmi Yazmalısın!");
             if (!code) return message.channel.send("Kodunu Yazmalısın!");
@@ -33,7 +33,7 @@ if(!args[0]) return message.channel.send(karaliste)
       //---------------------------------------------------------------------------------------------------------------------------  
       //---------------------------------------------------------------------------------------------------------------------------  
         else if(args[0] == 'js+') {
-            let kanal = '📁'+args[1]
+            let kanal = '📁-'+args[1]
             let code = args.slice(2).join(' ');
             if (!kanal) return message.channel.send("Kanal İsmi Yazmalısın!");
             if (!code) return message.channel.send("Kodunu Yazmalısın!");
@@ -54,7 +54,7 @@ if(!args[0]) return message.channel.send(karaliste)
       //---------------------------------------------------------------------------------------------------------------------------  
       //---------------------------------------------------------------------------------------------------------------------------  
         else if(args[0] == 'altyapı') {
-            let kanal = '📁'+args[1]
+            let kanal = '📁-'+args[1]
             let code = args.slice(2).join(' ');
             if (!kanal) return message.channel.send("Kanal İsmi Yazmalısın!");
             if (!code) return message.channel.send("Kodunu Yazmalısın!");

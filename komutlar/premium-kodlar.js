@@ -2,11 +2,11 @@ const Discord = require('discord.js');
 const ayarlar = require("../ayarlar.json")
 exports.run = function(client, message, args) {
 if(message.channel.id != ayarlar.log.komutlarkanal) return message.channel.send(':x: **Bu Komutudu <#'+ayarlar.log.komutlarkanal+'> Kanalında Kullan!**').then(n => n.delete(5000));  
-let a = message.guild.channels.find(x => x.id === 'KATEGORİ ID')
+let a = message.guild.channels.find(x => x.id === ayarlar.ID.jskatagoriID)
 let b = a.children.map(x => x.name )
-let c = message.guild.channels.find(x => x.id === 'KATEGORİ ID')
+let c = message.guild.channels.find(x => x.id === ayarlar.ID.js2katagoriID)
 let d = c.children.map(x => x.name )
-let e = message.guild.channels.find(x => x.id === 'KATEGORİ ID')
+let e = message.guild.channels.find(x => x.id === ayarlar.ID.altyapıKatagoriID)
 let f = e.children.map(x => x.name )
 message.author.send(new Discord.RichEmbed()
   .setTitle(`${message.guild.name} Adlı Sunucudaki Premium Kodlar!`)
