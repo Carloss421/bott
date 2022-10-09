@@ -2,16 +2,16 @@ const Discord = require('discord.js');
 const ayarlar = require('../ayarlar.json')
 exports.run = function(client, message) {
 
-  if(message.channel.id != "693532845175734332") return message.channel.send(':x: **Bu Komutudu <#693532845175734332> Kanalında Kullan!**').then(n => n.delete(5000));
+  if(message.channel.id != ayarlar.komutlarkanal) return message.channel.send(`:x: **Bu Komutudu <#${ayarlar.komutlarkanal}> Kanalında Kullan!**`).then(n => n.delete(5000));
   
   message.channel.bulkDelete(1)
 
 /////////////////////Config
 
- var logkanali = ayarlar.logkanali; //log kanalı kullanılacak ise true yapın kullanılmayacaksa false yapın
- var rolismi = ayarlar.rolismi; // Verilecek Rol Ismi
-var logkanalid = ayarlar.   
-  var guildid = ayarlar.sunucu.İD // Kullanılacak Sunucu
+ var logkanali = ayarlar.logkanali; 
+ var rolismi = ayarlar.rolismi; 
+var logkanalid = ayarlar.logkanalid;   
+  var guildid = ayarlar.sunucuID 
 
 ///////////////// Ana Kod
 message.channel.bulkDelete(1)
