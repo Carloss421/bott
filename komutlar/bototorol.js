@@ -13,7 +13,7 @@ exports.run = async (client, message, args) => {
   db.set(`bototorol_${message.guild.id}`, rol.id)
   message.channel.send(`Bot otorol \`${rol.name}\` olarak ayarlandı. Kapatmak için \`${prefix}bototorol\` yazmalısın.`)
 
-};//GweepCreative
+};
     
 exports.conf = {
     enabled: true,

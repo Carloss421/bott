@@ -123,7 +123,7 @@ client.on("guildMemberAdd", async member => {
 
 //---------------------------------
 client.on("guildMemberAdd", async member => {
-member.send("SUNUCUYA KATILAN KİŞİYE ATILACAK MEAJ")
+member.send(`${ayarlar.dmmsg}`)
 })
 
 
