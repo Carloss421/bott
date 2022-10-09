@@ -28,6 +28,10 @@ const log = message => {
   console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] ${message}`);
 };
 
+const message => {
+  console.log("Airfax Youtube Kanalından Alınmıştır Paylaşılması Yasaktır.")
+}
+
 client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
 fs.readdir('./komutlar/', (err, files) => {

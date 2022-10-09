@@ -1,10 +1,9 @@
 {
-  "name": "JaimiTR",
+  "name": "Airfax",
   "version": "1.0.1",
-  "description": "A boilerplate example bot with command handler and reloadable commands. Updated and Maintained by the Idiot's Guide Community",
+  "description": "Airfax Youtube Kanalından Alınmıştır Paylaşılması Yasaktır.",
   "main": "node bot.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node bot.js"
   },
   "engines": {
@@ -12,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/An-Idiots-Guide/guidebot.git"
+    "url": "https://alluring-southern-worm.glitch.me"
   },
-  "author": "The Idiot's Guide Community",
+  "author": "Airfax",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/An-Idiots-Guide/guidebot/issues"
+    "url": "https://alluring-southern-worm.glitch.me"
   },
-  "homepage": "https://github.com/An-Idiots-Guide/guidebot#readme",
+  "homepage": "https://alluring-southern-worm.glitch.me",
   "dependencies": {
     "MALjs": "^0.1.0",
     "aliases": "^1.0.0",
