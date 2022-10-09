@@ -21,7 +21,9 @@ if(!args[0]) return message.channel.send(karaliste)
 .setColor("RED")
 .setDescription(`**${message.guild.name} SUNUCUSU KOD PAYLAŞIM KANALI! JavaScript KATEGORİSİ!**\n
             **${message.author} Tarafından \`\`${kanal}\`\` İsimli Kod Eklendi! ${message.author} Teşekkür Ederiz! :heart:\n\n
-            ${client.emojis.get("EMOJİ ID")} İşte Kod;**`)))
+            ${client.emojis.get("EMOJİ ID")} İşte Kod;**
+            
+            ${code}`)))
 
             message.reply(`${client.emojis.get("EMOJİ ID")} **Kodunuz Başarıyla JavaScript Kategorisine Eklendi!\n Eklenen Kanalın İsmi:** \`\`${kanal}\`\` `).then(n => n.delete(5000));
             } else {
