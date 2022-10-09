@@ -4,11 +4,18 @@ const db = require("quick.db")////Airfax Youtube Kanalından Alınmıştır Payl
 exports.run = (client, message, args) => {////Airfax Youtube Kanalından Alınmıştır Paylaşılması Yasaktır.
         let prefix = ayarlar.prefix////Airfax Youtube Kanalından Alınmıştır Paylaşılması Yasaktır.
 if (!message.member.roles.find('id', ayarlar.rol.kodpaylaşımcırolü)) return message.channel.send(`Bu Kodu Kullanabilmek İçin <@&${ayarlar.rol.kodpaylaşımcırolü}> Rolüne Sahip Olmalısın!`);
-const karaliste = new Discord.RichEmbed()////Airfax Youtube Kanalından Alınmıştır Paylaşılması Yasaktır.
+const kodekle = new Discord.RichEmbed()////Airfax Youtube Kanalından Alınmıştır Paylaşılması Yasaktır.
 .setColor(`RED`)
-.setTitle(`${client.emojis.get(ayarlar.emoji.sağok)} ${message.guild.name} KARALİSTE`)////Airfax Youtube Kanalından Alınmıştır Paylaşılması Yasaktır.
-.setDescription(`> **Karaliste Logunu Ayarlamak İçin:** \`${prefix}karaliste kanalayarla #kanal\` \n > **Karalisteye Birini Eklemek İçin:** \`${prefix}karaliste ekle ID\` \n > **Karalisteden Birini Silmek İçin:** \`${prefix}karaliste kaldır ID\` \n > **Karaliste Log Kanalını Kapatmak İçin:** \`${prefix}karaliste kanalsıfırla\` \n > **Sistemi Sıfırlamak İçin:** \`${prefix}karaliste sıfırla\` `);
-if(!args[0]) return message.channel.send(karaliste)  ////Airfax Youtube Kanalından Alınmıştır Paylaşılması Yasaktır.
+.setTitle(`${client.emojis.get(ayarlar.emoji.taç)} ${message.guild.name} KodEkle`)////Airfax Youtube Kanalından Alınmıştır Paylaşılması Yasaktır.
+.setDescription(`
+> **Karaliste Logunu Ayarlamak İçin:** \`${prefix}karaliste kanalayarla #kanal\`
+> **Karalisteye Birini Eklemek İçin:** \`${prefix}karaliste ekle ID\` 
+> **Karalisteden Birini Silmek İçin:** \`${prefix}karaliste kaldır ID\` 
+> **Karaliste Log Kanalını Kapatmak İçin:** \`${prefix}karaliste kanalsıfırla\` 
+> **Sistemi Sıfırlamak İçin:** \`${prefix}karaliste sıfırla\` 
+
+`);
+if(!args[0]) return message.channel.send(kodekle)  ////Airfax Youtube Kanalından Alınmıştır Paylaşılması Yasaktır.
 
         if(args[0] == 'js') {
             let kanal = '📁-'+args[1]////Airfax Youtube Kanalından Alınmıştır Paylaşılması Yasaktır.
