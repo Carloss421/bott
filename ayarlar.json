@@ -19,7 +19,9 @@
   
   "ID" : {
     "sunucuID": "",
-    "kodkatagoriID": "1028532469416349767"
+    "jskatagoriID": "1028532469416349767",
+    "js2katagoriID": "",
+    "altyapıKatagoriID": ""
     
   }
   

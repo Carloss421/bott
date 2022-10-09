@@ -16,8 +16,8 @@ if(!args[0]) return message.channel.send(karaliste)
             if (!kanal) return message.channel.send("Kanal İsmi Yazmalısın!");
             if (!code) return message.channel.send("Kodunu Yazmalısın!");
             message.delete();
-            if (message.guild.channels.find(a => a.id === ayarlar.ID.kodkatagoriID)) {
-            message.guild.createChannel(kanal, {type: "text", parent: message.guild.channels.find(a => a.id === ayarlar.ID.kodkatagoriID)}).then(c => c.send(new Discord.RichEmbed()
+            if (message.guild.channels.find(a => a.id === ayarlar.ID.jskatagoriID)) {
+            message.guild.createChannel(kanal, {type: "text", parent: message.guild.channels.find(a => a.id === ayarlar.ID.jskatagoriID)}).then(c => c.send(new Discord.RichEmbed()
 .setColor("RED")
 .setDescription(`**${message.guild.name} SUNUCUSU KOD PAYLAŞIM KANALI! JavaScript KATEGORİSİ!**\n
             **${message.author} Tarafından \`\`${kanal}\`\` İsimli Kod Eklendi! ${message.author} Teşekkür Ederiz! :heart:\n\n
@@ -26,7 +26,7 @@ if(!args[0]) return message.channel.send(karaliste)
             ${code}`)))
             message.reply(`${client.emojis.get("EMOJİ ID")} **Kodunuz Başarıyla JavaScript Kategorisine Eklendi!\n Eklenen Kanalın İsmi:** \`\`${kanal}\`\` `).then(n => n.delete(5000));
             } else {
-            return message.reply(`<#${ayarlar.ID.kodkatagoriID}> adında bir kategori yok!`)
+            return message.reply(`<#${ayarlar.ID.jskatagoriID}> adında bir kategori yok!`)
             }
           }
       //---------------------------------------------------------------------------------------------------------------------------  
@@ -37,20 +37,20 @@ if(!args[0]) return message.channel.send(karaliste)
             if (!kanal) return message.channel.send("Kanal İsmi Yazmalısın!");
             if (!code) return message.channel.send("Kodunu Yazmalısın!");
             message.delete();
-            if (message.guild.channels.find(a => a.id === "KATEGORİ ID")) {
-            message.guild.createChannel(kanal, {type: "text", parent: message.guild.channels.find(a => a.id === "KATEGORİ ID")}).then(c => c.send(new Discord.RichEmbed()
+            if (message.guild.channels.find(a => a.id === ayarlar.ID.js2katagoriID)) {
+            message.guild.createChannel(kanal, {type: "text", parent: message.guild.channels.find(a => a.id === ayarlar.ID.js2katagoriID)}).then(c => c.send(new Discord.RichEmbed()
 .setColor("RED")
 .setDescription(
 
 
-            `**${message.guild.name} SUNUCUSU KOD PAYLAŞIM KANALI! JavaScript++ KATEGORİSİ!**\n
+            `**${message.guild.name} SUNUCUSU KOD PAYLAŞIM KANALI! JavaScript+ KATEGORİSİ!**\n
             **${message.author} Tarafından \`\`${kanal}\`\` İsimli Kod Eklendi! ${message.author} Teşekkür Ederiz! :heart:\n\n
             ${client.emojis.get("EMOJİ ID")} İşte Kod;**
 
             ${code}`)))
             message.reply(`${client.emojis.get("EMOJİ ID")} **Kodunuz Başarıyla JavaScript++ Kategorisine Eklendi!\n Eklenen Kanalın İsmi:** \`\`${kanal}\`\` `).then(n => n.delete(5000));
             } else {
-            return message.reply("<#KATEGORİ ID> adında bir kategori yok!")
+            return message.reply(`<#${ayarlar.ID.js2katagoriID}> adında bir kategori yok!`)
             }
         }
       //---------------------------------------------------------------------------------------------------------------------------  
@@ -61,19 +61,17 @@ if(!args[0]) return message.channel.send(karaliste)
             if (!kanal) return message.channel.send("Kanal İsmi Yazmalısın!");
             if (!code) return message.channel.send("Kodunu Yazmalısın!");
             message.delete();
-            if (message.guild.channels.find(a => a.id === "KATEGORİ ID")) {
-            message.guild.createChannel(kanal, {type: "text", parent: message.guild.channels.find(a => a.id === "KATEGORİ ID")}).then(c => c.send(new Discord.RichEmbed()
+            if (message.guild.channels.find(a => a.id === ayarlar.ID.altyapıKatagoriID)) {
+            message.guild.createChannel(kanal, {type: "text", parent: message.guild.channels.find(a => a.id === ayarlar.ID.altyapıKatagoriID)}).then(c => c.send(new Discord.RichEmbed()
 .setColor("RED")
-.setDescription(
-
-            `**${message.guild.name} SUNUCUSU KOD PAYLAŞIM KANALI! Altayapı KATEGORİSİ!**\n
+.setDescription(`**${message.guild.name} SUNUCUSU KOD PAYLAŞIM KANALI! Altayapı KATEGORİSİ!**\n
             **${message.author} Tarafından \`\`${kanal}\`\` İsimli Altyapı Eklendi! ${message.author} Teşekkür Ederiz! :heart:\n\n
             ${client.emojis.get("EMOJİ ID")} İşte Altayapı;**
 
             ${code}`)))
             message.reply(`${client.emojis.get("EMOJİ ID")} **Kodunuz Başarıyla Altyapı Kategorisine Eklendi!\n Eklenen Kanalın İsmi:** \`\`${kanal}\`\` `).then(n => n.delete(5000));
             } else {
-            return message.reply("<#KATEGORİ ID> adında bir kategori yok!")
+            return message.reply("<#"+ayarlar.ID.altyapıKatagoriID+"> adında bir kategori yok!")
             }
         }
       }  
