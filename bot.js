@@ -130,7 +130,7 @@ member.send(`${ayarlar.dmmsg}`)
 
 client.on("ready", () => {
   setInterval(() => {
-    let botdurum = client.channels.find(c => c.id === "1022869464582197318");
+    let botdurum = client.channels.find(c => c.id === ayarlar.ID.istatistiklog);
     let guild = botdurum.guild.id
     botdurum.send(new Discord.RichEmbed()
       .setColor("RED")
