@@ -2,21 +2,25 @@
   "prefix": "!",
   "sahip": ["837953203197968414"],
   "sunucuID": "",
-  "rolismi": "Deneme",
   
   "rol": {
     "js": "1028539879942008924",
-    "jsrolismi": "Js"
+    "jsrolismi": "Js",
+    "kodpaylaşımcırolü": "1028539880894124062"
   },
   
   "log": {
-    "komutlarkanal": "1028532364722307213",
-    "jslogkanalid": "1028543300275273748",
-   "jslogkanali": "1028543300275273748"
+    "komutlarkanal": "1028532364722307213"
     },
   
   "msg": {
     "dmmsg": "Hoş geldin"
+  },
+  
+  "ID" : {
+    "sunucuID": "",
+    "kodkatagori": ""
+    
   }
   
 }

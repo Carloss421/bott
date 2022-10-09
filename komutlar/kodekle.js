@@ -3,7 +3,7 @@ const ayarlar = require('../ayarlar.json')
 const db = require("quick.db")
 exports.run = (client, message, args) => {
         let prefix = ayarlar.prefix
-if (!message.member.roles.find('id', 'ROL ID')) return message.channel.send('Bu Kodu Kullanabilmek İçin <@&ROL ID> Rolüne Sahip Olmalısın!');
+if (!message.member.roles.find('id', ayarlar.rol.kodpaylaşımcırolü)) return message.channel.send(`Bu Kodu Kullanabilmek İçin <@&${ayarlar.rol.kodpaylaşımcırolü}> Rolüne Sahip Olmalısın!`);
   
 
         if(args[0] == 'js') {
