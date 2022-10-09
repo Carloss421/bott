@@ -8,10 +8,10 @@ exports.run = function(client, message) {
 
 /////////////////////Config
 
- var logkanali = "false"; //log kanalı kullanılacak ise true yapın kullanılmayacaksa false yapın
- var rolismi = "693562376674345070" // Verilecek Rol Ismi
-var logkanalid = "688797347504717897"   
-  var guildid = "678162896030531594" // Kullanılacak Sunucu
+ var logkanali = ayarlar.logkanali; //log kanalı kullanılacak ise true yapın kullanılmayacaksa false yapın
+ var rolismi = ayarlar.rolismi; // Verilecek Rol Ismi
+var logkanalid = ayarlar.   
+  var guildid = ayarlar.sunucu.İD // Kullanılacak Sunucu
 
 ///////////////// Ana Kod
 message.channel.bulkDelete(1)
