@@ -9,7 +9,7 @@ module.exports = client => {
 }, 8000);
 client.user.setPresence({
         game: {
-            name: `Gweep Creative `,
+            name: `Airfax music `,
             type: 'listening'
         },
         status: 'online'
