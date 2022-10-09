@@ -14,5 +14,5 @@ client.user.setPresence({
         },
         status: 'online'
     })
-    console.log(`[${client.user.username}]: Giriş Yaptı! Komutlar Yüklendi! Only Code By Except!`);
+    console.log(`[${client.user.username}]: Giriş Yaptı! Komutlar Yüklendi! Airfax/Youtube!`);
 }
