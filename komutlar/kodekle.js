@@ -6,13 +6,9 @@ exports.run = (client, message, args) => {////Airfax Youtube Kanalından Alınm�
 if (!message.member.roles.find('id', ayarlar.rol.kodpaylaşımcırolü)) return message.channel.send(`Bu Kodu Kullanabilmek İçin <@&${ayarlar.rol.kodpaylaşımcırolü}> Rolüne Sahip Olmalısın!`);
 const kodekle = new Discord.RichEmbed()////Airfax Youtube Kanalından Alınmıştır Paylaşılması Yasaktır.
 .setColor(`RED`)
-.setTitle(`${client.emojis.get(ayarlar.emoji.taç)} ${message.guild.name} KodEkle`)////Airfax Youtube Kanalından Alınmıştır Paylaşılması Yasaktır.
+.setTitle(`${client.emojis.get(ayarlar.emoji.taç)} ${message.guild.name} Kod Ekle`)////Airfax Youtube Kanalından Alınmıştır Paylaşılması Yasaktır.
 .setDescription(`
-> **Karaliste Logunu Ayarlamak İçin:** \`${prefix}karaliste kanalayarla #kanal\`
-> **Karalisteye Birini Eklemek İçin:** \`${prefix}karaliste ekle ID\` 
-> **Karalisteden Birini Silmek İçin:** \`${prefix}karaliste kaldır ID\` 
-> **Karaliste Log Kanalını Kapatmak İçin:** \`${prefix}karaliste kanalsıfırla\` 
-> **Sistemi Sıfırlamak İçin:** \`${prefix}karaliste sıfırla\` 
+**> Rank Seç (js, js+, altyapı) \n Örneğin;** \`!kodekle js+ mesaj-sil (Mesaj Komudu)\`
 
 `);
 if(!args[0]) return message.channel.send(kodekle)  ////Airfax Youtube Kanalından Alınmıştır Paylaşılması Yasaktır.
