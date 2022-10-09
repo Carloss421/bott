@@ -4,7 +4,11 @@ const db = require("quick.db")
 exports.run = (client, message, args) => {
         let prefix = ayarlar.prefix
 if (!message.member.roles.find('id', ayarlar.rol.kodpaylaşımcırolü)) return message.channel.send(`Bu Kodu Kullanabilmek İçin <@&${ayarlar.rol.kodpaylaşımcırolü}> Rolüne Sahip Olmalısın!`);
-  
+const karaliste = new Discord.RichEmbed()
+.setColor(`RED`)
+.setTitle(`${client.emojis.get("EMOJİ ID")} ${message.guild.name} KARALİSTE`)
+.setDescription(`> **Karaliste Logunu Ayarlamak İçin:** \`${prefix}karaliste kanalayarla #kanal\` \n > **Karalisteye Birini Eklemek İçin:** \`${prefix}karaliste ekle ID\` \n > **Karalisteden Birini Silmek İçin:** \`${prefix}karaliste kaldır ID\` \n > **Karaliste Log Kanalını Kapatmak İçin:** \`${prefix}karaliste kanalsıfırla\` \n > **Sistemi Sıfırlamak İçin:** \`${prefix}karaliste sıfırla\` `);
+if(!args[0]) return message.channel.send(karaliste)  
 
         if(args[0] == 'js') {
             let kanal = '📁'+args[1]
@@ -12,8 +16,8 @@ if (!message.member.roles.find('id', ayarlar.rol.kodpaylaşımcırolü)) return 
             if (!kanal) return message.channel.send("Kanal İsmi Yazmalısın!");
             if (!code) return message.channel.send("Kodunu Yazmalısın!");
             message.delete();
-            if (message.guild.channels.find(a => a.id === "KATEGORİ ID")) {
-            message.guild.createChannel(kanal, {type: "text", parent: message.guild.channels.find(a => a.id === "KATEGORİ ID")}).then(c => c.send(new Discord.RichEmbed()
+            if (message.guild.channels.find(a => a.id === ayarlar.ID.kodkatagoriID)) {
+            message.guild.createChannel(kanal, {type: "text", parent: message.guild.channels.find(a => a.id === ayarlar.ID.kodkatagoriID)}).then(c => c.send(new Discord.RichEmbed()
 .setColor("RED")
 .setDescription(
             `**${message.guild.name} SUNUCUSU KOD PAYLAŞIM KANALI! JavaScript KATEGORİSİ!**\n
@@ -23,7 +27,7 @@ if (!message.member.roles.find('id', ayarlar.rol.kodpaylaşımcırolü)) return 
             ${code}`)))
             message.reply(`${client.emojis.get("EMOJİ ID")} **Kodunuz Başarıyla JavaScript Kategorisine Eklendi!\n Eklenen Kanalın İsmi:** \`\`${kanal}\`\` `).then(n => n.delete(5000));
             } else {
-            return message.reply("<#KATEGORİ ID> adında bir kategori yok!")
+            return message.reply(`<#${ayarlar.ID.kodkatagoriID}> adında bir kategori yok!`)
             }
           }
       //---------------------------------------------------------------------------------------------------------------------------  
