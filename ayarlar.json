@@ -1,12 +1,22 @@
 {
   "prefix": "!",
   "sahip": ["837953203197968414"],
-  "komutlarkanal": "1028532364722307213",
-  "hatalıkod": "",
-  "dmmsg": "Hoş geldin",
   "sunucuID": "",
-  "rolismi": "",
-  "logkanalid": "",
-  "logkanali": ""
+  "rolismi": "Deneme",
+  
+  "rol": {
+    "js": "1028539879942008924",
+    "rolismi": "Deneme"
+  },
+  
+  "log": {
+    "komutlarkanal": "1028532364722307213",
+    "logkanalid": "",
+   "logkanali": ""
+    },
+  
+  "msg": {
+    "dmmsg": "Hoş geldin"
+  }
   
 }

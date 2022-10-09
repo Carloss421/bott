@@ -4,7 +4,7 @@ const a = require('../ayarlar.json')
  
 exports.run = async function(client, message, args) {
   
-  if(message.channel.id != a.hatalıkod) return message.channel.send(`:x: **Bu Komutudu <#${a.hatalıkod}> Kanalında Kullan!**`).then(n => n.delete(5000));
+  if(message.channel.id != a.log.komutlarkanal) return message.channel.send(`:x: **Bu Komutudu <#${a.log.komutlarkanal}> Kanalında Kullan!**`).then(n => n.delete(5000));
   
   
   message.channel.bulkDelete(1)
