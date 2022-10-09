@@ -8,10 +8,10 @@ module.exports.run = async (client, message, args) => {
 .setThumbnail(message.guild.iconURL)  
 .setDescription(`
 ${client.emojis.get(a.emoji.sağok)} | **Sunucudaki \`Toplam Üye\` Sayısı:** \`${message.guild.memberCount}\`
-${client.emojis.get("EMOJİ ID")} | **Sunucudaki \`Online\` Sayısı:** \`${message.guild.members.filter(x => x.user.presence.status === 'online').size}\`
-${client.emojis.get("EMOJİ ID")} | **Sunucudaki \`idle\` Sayısı:** \`${message.guild.members.filter(x => x.user.presence.status === 'idle').size}\`
-${client.emojis.get("EMOJİ ID")} | **Sunucudaki \`Dnd\` Sayısı:** \`${message.guild.members.filter(x => x.user.presence.status === 'dnd').size}\`
-${client.emojis.get("EMOJİ ID")} | **Sunucudaki \`Offline\` Sayısı:** \`${message.guild.members.filter(x => x.user.presence.status === 'offline').size}\`
+${client.emojis.get(a.emoji.sağok)} | **Sunucudaki \`Online\` Sayısı:** \`${message.guild.members.filter(x => x.user.presence.status === 'online').size}\`
+${client.emojis.get(a.emoji.sağok)} | **Sunucudaki \`idle\` Sayısı:** \`${message.guild.members.filter(x => x.user.presence.status === 'idle').size}\`
+${client.emojis.get(a.emoji.sağok)} | **Sunucudaki \`Dnd\` Sayısı:** \`${message.guild.members.filter(x => x.user.presence.status === 'dnd').size}\`
+${client.emojis.get(a.emoji.sağok)} | **Sunucudaki \`Offline\` Sayısı:** \`${message.guild.members.filter(x => x.user.presence.status === 'offline').size}\`
 `)
   .setFooter(`Komutu Kullanan: ${message.author.tag}`, message.author.avatarURL)   
   message.channel.sendEmbed(bergy);

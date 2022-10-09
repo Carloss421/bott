@@ -114,7 +114,7 @@ client.on("guildMemberAdd", async member => {
     if (botrol) {
       if (member.user.bot) {
         member.addRole(botrol2)
-        client.channels.get("EMOJİ ID").send(` \`${member.user.tag}\` adlı bota \`${botrol2.name}\` rolü verildi.`)
+        client.channels.get(ayarlar.emoji.tik).send(` \`${member.user.tag}\` adlı bota \`${botrol2.name}\` rolü verildi.`)
       }
   
     }
