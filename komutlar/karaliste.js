@@ -1,12 +1,12 @@
 const Discord = require('discord.js');
-const db = require('quick.db');
-const { prefix } = require('../ayarlar.json');
-exports.run = async (client, message, args) => {
+const db = require('quick.db');////Airfax Youtube Kanalından Alınmıştır Paylaşılması Yasaktır.
+const { prefix, a } = require('../ayarlar.json');
+exports.run = async (client, message, args) => {////Airfax Youtube Kanalından Alınmıştır Paylaşılması Yasaktır.
 let cfxuser = message.mentions.members.first()
 let cfxkaralisteid = args[1];
 let cfxkaralistededb = await db.fetch(`cfxkaralistede${message.author.id}`)
 let cfxkaralistekanaldb = await db.fetch(`cfxkaralistekanaldb${message.guild.id}`)
-let cfxkanal2 = message.guild.channels.find('id', cfxkaralistekanaldb)
+let cfxkanal2 = message.guild.channels.find('id', cfxkaralistekanaldb)////Airfax Youtube Kanalından Alınmıştır Paylaşılması Yasaktır.
 let cfxkanal = message.mentions.channels.first()
 const karaliste = new Discord.RichEmbed()
 .setColor(`RED`)
@@ -14,13 +14,13 @@ const karaliste = new Discord.RichEmbed()
 .setDescription(`> **Karaliste Logunu Ayarlamak İçin:** \`${prefix}karaliste kanalayarla #kanal\` \n > **Karalisteye Birini Eklemek İçin:** \`${prefix}karaliste ekle ID\` \n > **Karalisteden Birini Silmek İçin:** \`${prefix}karaliste kaldır ID\` \n > **Karaliste Log Kanalını Kapatmak İçin:** \`${prefix}karaliste kanalsıfırla\` \n > **Sistemi Sıfırlamak İçin:** \`${prefix}karaliste sıfırla\` `);
 if(!args[0]) return message.channel.send(karaliste)
 
-if(args[0] == 'sıfırla') {
+if(args[0] == 'sıfırla') {////Airfax Youtube Kanalından Alınmıştır Paylaşılması Yasaktır.////Airfax Youtube Kanalından Alınmıştır Paylaşılması Yasaktır.
 	db.delete(`cfxkaralistededb${cfxkaralisteid}`)
 	db.delete(`cfxkaralistekanaldb${message.guild.id}`)
 	message.channel.send(`Sistem Kapatıldı.`)
 	return; }
 if(args[0] == 'kanalsıfırla') {
-	db.delete(`cfxkaralistekanaldb${message.guild.id}`)
+	db.delete(`cfxkaralistekanaldb${message.guild.id}`)////Airfax Youtube Kanalından Alınmıştır Paylaşılması Yasaktır.
 	message.channel.send(`Kanal Sıfırlandı`)
 	return; }
 if(args[0] == 'kanalayarla') {

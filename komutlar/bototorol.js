@@ -1,7 +1,7 @@
-const Discord = require('discord.js')
+const Discord = require('discord.js')////Airfax Youtube Kanalından Alınmıştır Paylaşılması Yasaktır.
 const db = require('quick.db');
 const ayarlar = require('../ayarlar.json')
-
+////Airfax Youtube Kanalından Alınmıştır Paylaşılması Yasaktır.
 exports.run = async (client, message, args) => {
   
   let prefix = await require('quick.db').fetch(`prefix_${message.guild.id}`) || ayarlar.prefix
@@ -13,17 +13,17 @@ exports.run = async (client, message, args) => {
   db.set(`bototorol_${message.guild.id}`, rol.id)
   message.channel.send(`Bot otorol \`${rol.name}\` olarak ayarlandı. Kapatmak için \`${prefix}bototorol\` yazmalısın.`)
 
-};
+};////Airfax Youtube Kanalından Alınmıştır Paylaşılması Yasaktır.
     
 exports.conf = {
     enabled: true,
-    guildOnly: true,
+    guildOnly: true,////Airfax Youtube Kanalından Alınmıştır Paylaşılması Yasaktır.
     aliases: ['bot-oto-rol'],
     permLevel: 0
 }
 
-exports.help = {
+exports.help = {////Airfax Youtube Kanalından Alınmıştır Paylaşılması Yasaktır.
     name: 'bototorol',
     description: 'Sunucuya giren bota seçtiğiniz rolü otomatik verir.',
-    usage: 'bototorol <@rol>'
+    usage: 'bototorol <@rol>'////Airfax Youtube Kanalından Alınmıştır Paylaşılması Yasaktır.
 }
