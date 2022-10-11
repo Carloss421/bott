@@ -36,7 +36,14 @@ module.exports.run = async (client, message, args) => {////Airfax Youtube Kanal�
 **${prefix}kodlar ;**
 \`Premium Kodları Görürsünüz!\`
 
+**${prefix}reboot ;**
+\`[Sahip Komutu]\`
 
+**${prefix}rolver ;**
+\`Belirli Rol verir!\`
+
+**${prefix}say ;**
+\`Sunucuyu Sayar!\`
 
 
 
