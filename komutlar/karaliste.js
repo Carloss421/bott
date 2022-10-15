@@ -35,7 +35,7 @@ if(args[0] == 'ekle') {
   if(args[1] == cfxkaralisteid) cfxdb11 = `<@${cfxkaralisteid}>`
 const alındı = new Discord.RichEmbed()////Airfax Youtube Kanalından Alınmıştır Paylaşılması Yasaktır.
 .setColor(`RED`)
-.setTitle(`${client.emojis.get(a.emoji.tik)} ${message.guild.name} KARALİSTE`)
+.setTitle(` ${message.guild.name} KARALİSTE`)
 .setDescription(`${cfxdb11} **Karalisteye Alındı!**`)
 cfxkanal2.send(alındı)////Airfax Youtube Kanalından Alınmıştır Paylaşılması Yasaktır.
 
@@ -48,7 +48,7 @@ if(args[0] == 'kaldır') {
   if(args[1] == cfxkaralisteid) cfxdb22 = `<@${cfxkaralisteid}>`
 const verildi = new Discord.RichEmbed()
 .setColor(`RED`)
-.setTitle(`${client.emojis.get(a.emoji.tik)} ${message.guild.name} KARALİSTE`)////Airfax Youtube Kanalından Alınmıştır Paylaşılması Yasaktır.
+.setTitle(`${message.guild.name} KARALİSTE`)////Airfax Youtube Kanalından Alınmıştır Paylaşılması Yasaktır.
 .setDescription(`${cfxdb22} **Karalisteden Silindi!**`)
 cfxkanal2.send(verildi)
 	return }}

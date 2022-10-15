@@ -127,7 +127,7 @@ client.on("guildMemberAdd", async member => {
 
 //---------------------------------
 client.on("guildMemberAdd", async member => {
-member.send(`${ayarlar.dmmsg}`)
+member.send(`${ayarlar.msg.dmmsg}`)
 })
 
 
