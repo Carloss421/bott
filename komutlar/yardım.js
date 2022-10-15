@@ -9,38 +9,13 @@ module.exports.run = async (client, message, args) => {////Airfax Youtube Kanal�
 .setDescription(`__**Komutlar**__
 
 **${prefix}bototorol ;**
-\`Sunucuya giren bota seçtiğiniz rolü otomatik verir.\`
-
-
-**${prefix}hata-kanal ;**
-\`Hatalı Kanal Log Ayarlarsınız!\`
-
-**${prefix}hata ;**
-\`Kodda Hata Olduğunu Belirtirsiniz\`
-
-**${prefix}istek-kanal ;**
-\`İstek Kanal Ayarlarsınız!\`
-
-**${prefix}istek ;**
-\`Kod İstersiniz!\`
-
-**${prefix}js ;**
-\`JavaScript Rolünü Verir.\`
+\`Bota Otomatik Rol verir.\`
 
 **${prefix}karaliste ;**
 \`Üyeyi Kara Listeye Alır/çıkarır!\`
 
-**${prefix}kodekle ;**
-\`Kod Eklersiniz!\`
-
-**${prefix}kodlar ;**
-\`Premium Kodları Görürsünüz!\`
-
 **${prefix}reboot ;**
 \`[Sahip Komutu]\`
-
-**${prefix}rolver ;**
-\`Belirli Rol verir!\`
 
 **${prefix}say ;**
 \`Sunucuyu Sayar!\`

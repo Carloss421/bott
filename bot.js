@@ -18,7 +18,7 @@ const fs = require('fs');
 const ms = require('ms');
 const moment = require('moment');
 const db = require('quick.db');
-const Jimp = require('jimp');          fs
+const Jimp = require('jimp');          
 
 require('./util/eventLoader')(client);
 
